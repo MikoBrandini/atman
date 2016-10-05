@@ -1,0 +1,239 @@
+<! doctype HTML>
+<html>
+<head>
+	<title>@man: Wear Your Wearables</title>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<style>
+		td,th{
+			height: 50px;
+			width: 500px;
+			font-family: cursive;
+		}
+
+ 		th{
+ 			color: #824100;
+ 			font-size: 20pt;
+ 		}
+
+		table{
+				background-color: #361B00;
+	 			width: 90%%;
+	 			margin: 0 auto;
+		}
+
+		.mySlides {display:none}
+
+		.landers:hover, #togglerLeft:hover, #togglerRight:hover{
+		 transform: scale(1.3); 
+		}
+		#togglerLeft:active{
+			border-right: 100px solid #824100;
+		}
+
+		#togglerRight:active{
+			border-left: 100px solid #824100;
+		}
+		#togglerLeft{
+			height: 0px;
+			width: 0px;
+			border-top: 50px solid transparent;
+			border-right: 100px solid #361B00;
+			border-bottom: 50px solid transparent;
+			background: transparent;
+			display: inline-block;
+			float: left;
+			position: relative;
+			top: 200px;
+			left: 200px;
+		}
+		#togglerRight{
+			height: 0px;
+			width: 0px;
+			border-top: 50px solid transparent;
+			border-left: 100px solid #361B00;
+			border-bottom: 50px solid transparent;
+			background: transparent;
+			display: inline-block;
+			float: right;
+			position: relative;
+			top: 200px;
+			right: 200px	;
+
+		}
+
+
+	</style>
+</head>
+
+<body>
+	<nav>
+
+		<div> <a href="index.html" id="logo">@man</a></div>
+		<ul>
+			<li class="navLi"><a class="navLi" href="login.html">Log In</a></li>
+			<li class="navLi"><a class="navLi" href="testimonials.html">Testimonials</a></li>
+			<li class="navLi"><a class="navLi" href="wearables.html">Wearables</a></li>
+			<li class="navLi"><a class="navLi" href="subscribe.html">Subscribe</a></li>
+			<li class="navLi"><a class="navLi" href="index.html">Home</a></li>
+		</ul>
+	</nav>
+	<div class="externalWrapperA">
+				<div id="togglerLeft" onclick="plusDivs(-1)"></div>
+			<div id="togglerRight" onclick="plusDivs(1)"></div>
+		<div class="whiteContent">
+			<center>
+			<div class="mySlides">
+			<center><h1 style="color: purple;">Passion</u></h1></center>
+			<img src="images/purplenecklace.gif" height="250px">
+			<!-- Purple necklace source:
+			http://max1.jewelrystatic.com/media/catalog/product/s/w/sw5798fmllcd_main.jpg-->
+			</div>
+
+			<div class="mySlides">
+			<center><h1 style="color: #000E5C;">Happiness</u></h1></center>
+			<img src="images/bluering.gif" height="250px">
+			<!-- Blue ring source: 
+			https://c2.staticflickr.com/8/7175/6467984745_2dbff3b39f_b.jpg-->
+			</div>
+
+			<div class="mySlides">
+			<center><h1 style="color: #317F17;">Peace</u></h1></center>
+			<img src="images/greenring.png" height="250px">
+			<!-- Green ring source: 
+			http://image.dhgate.com/0x0/f2/albu/g3/M01/43/A1/rBVaHVW4cN-AYFQdAAU_4EskQzk474.jpg-->
+			</div>
+
+			<div class="mySlides">
+			<center><h1 style="color: gold;">Fear</u></h1></center>
+			<img src="images/yellowbracelet.png" height="250px">
+			<!-- Yellow bracelet source: 
+			http://www.wlfj.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/j/9/j9436fjb.jpg -->
+			</div>
+
+			<div class="mySlides">
+			<center><h1 style="color:#F90000;">Anger</u></h1></center>
+			<img src="images/rubypendant.png" height="250px">
+			<!-- Ruby pendant source: 
+			http://cdn.shopify.com/s/files/1/1034/7031/products/capture_One_12310_red_final_cropped.jpg?v=1449650258 -->
+			</div>
+
+			<div class="mySlides">
+			<center><h1 style="color:black;">Sadness</u></h1></center>
+			<img src="images/blackring.gif" height="250px">
+			<!-- Black ring source:
+			http://g02.a.alicdn.com/kf/HTB1xQnnJFXXXXaXXXXXq6xXFXXXG/2015-Newest-arrival-high-quality-black-gem-stone-Plated-silver-men-finger-rings-wedding-ring-for.jpg -->
+			</div>
+			<br>
+
+			
+			</center>
+		</div>
+	</div>
+
+	<div class="greenContent2">
+		<table id="table" cellspacing="0px">
+			<tr>
+				<th class="landers" onmouseover="currentDiv(1)">Passion</th>
+				<th class="landers" onmouseover="currentDiv(2)">Happiness</th>
+				<th class="landers" onmouseover="currentDiv(3)">Peace</th>
+				<th class="landers" onmouseover="currentDiv(4)">Fear</th>
+				<th class="landers" onmouseover="currentDiv(5)">Anger</th>
+				<th class="landers" onmouseover="currentDiv(6)">Sadness</th>
+			</tr>
+
+			<tr>
+				<td style="background: linear-gradient(to right, #39003c, purple)" class="landers" onmouseover="currentDiv(1)"></td>
+				<td style="background: linear-gradient(to right, #000E5C, #32FBE9)" class="landers" onmouseover="currentDiv(2)"></td>
+				<td style="background: linear-gradient(to right, #317F17, #BFFF89)" class="landers" onmouseover="currentDiv(3)"></td>
+				<td style="background: linear-gradient(to right, orange, gold)" class="landers" onmouseover="currentDiv(4)"></td>
+				<td style="background: linear-gradient(to right, #4C0000, #F90000)" class="landers" onmouseover="currentDiv(5)"></td>
+				<td style="background: linear-gradient(to right, black, grey)" class="landers" onmouseover="currentDiv(6)"></td>
+			</tr>
+		</table>
+	</div>
+
+	<div class="whiteWrapper">
+		<center>
+			<h1>Less Ambiguity<br>Pure Honesty</h1>
+					<img src="images/manwithgreenbrooch.jpg" height="500px" >
+					<!-- The man with the green brooch: http://g01.a.alicdn.com/kf/HTB15hJXKpXXXXc8XpXXq6xXFXXXD/High-Quality-Laser-Plating-Brooches-Anchor-Shape-with-Rhinestone-Brooch-font-b-Wedding-b-font-font.jpg -->
+			<h2>Show Your True Colors</h2>
+
+			</center>
+	</div>
+
+	<div class="greenWrapper">
+			<center>
+			<h2>Customize Your Own Wearable</h2>
+			<p>
+			@man and our partners are commmitted to providing sleek modern hardware for your every day life. 
+			</p>
+
+			<a href="http://www.bulgari.com/en-us/" target="_blank"><img src="images/bvlgari.jpg" height="150px"></a>
+
+			<a href="http://www.harrywinston.com/en" target="_blank"><img src="images/harrywinston.jpg" height="150px"></a>
+
+			<a href="https://www.mikimotoamerica.com" target="_blank"><img src="images/mikimoto.jpg" height="150px"></a>
+
+			<a href="http://www.piaget.com" target="_blank"><img src="images/piaget.jpg" height="150px"></a>
+			</center>
+			<!--
+			<img height="500px" src="images/transparentnecklace.jpg">
+		 Transparent Necklace:	https://static2.wysadacdn.com/media/catalog/product/n/h/nhs-bs027-sn016-crys.jpg
+ -->
+	</div>
+<script>
+var slideIndex=1;
+showDivs(slideIndex);
+
+function plusDivs(n){
+	showDivs(slideIndex += n);
+}
+
+function currentDiv(n){
+	showDivs(slideIndex=n);
+}
+
+function showDivs(n) {
+	var i;
+	var x = document.getElementsByClassName("mySlides");
+	var landers = document.getElementsByClassName("landers")
+	if(n>x.length) {slideIndex=1}
+	if (n<1) {slideIndex=x.length}
+	for (i=0; i<x.length; i++){
+	x[i].style.display="none";
+	}
+	for(i=0; i<landers.length; i++){
+	}
+	x[slideIndex-1].style.display="block";
+}
+
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none"; 
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1} 
+    slides[slideIndex-1].style.display = "block"; 
+    setTimeout(showSlides, 2500); 
+}
+
+</script>
+
+</body>
+
+	<footer>
+		<ul>
+		<li id="footerId"><a href="contactus.html">Contact Us</a></li>
+		<li id="footerId"><a href="about-us.html">About Us</a></li>
+		<li id="footerId"></li>
+		</ul>
+	</footer>
+
+
+</html>

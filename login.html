@@ -1,0 +1,87 @@
+<!doctype HTML>
+<html>
+<head>
+	<title>@man: Log In</title>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+<style>
+	#firstDiv
+	{
+	background-image: url("images/logincouple.jpg");
+	background-size: 100%;
+	height: 600px;
+	background-color: brown;
+	opacity: 0.9;
+	}
+	/* Source for login couple image: http://2.bp.blogspot.com/-2I5mgr_dauU/UyMQFFYO4EI/AAAAAAAACXg/ttnFUjn_ngo/s1600/o-NATE-BERKUS-facebook.jpg */
+#content{
+	background-color: #361B00;
+	width: 300px;
+	margin: 0 auto;
+	position: relative;
+	top: 100px;
+}
+h1{
+	margin:0;
+}
+</style>
+</head>
+
+<body>
+	<nav>
+
+		<div> <a href="index.html" id="logo">@man</a></div>
+		<ul>
+			<li class="navLi"><a class="navLi" href="login.html">Log In</a></li>
+			<li class="navLi"><a class="navLi" href="testimonials.html">Testimonials</a></li>
+			<li class="navLi"><a class="navLi" href="wearables.html">Wearables</a></li>
+			<li class="navLi"><a class="navLi" href="subscribe.html">Subscribe</a></li>
+			<li class="navLi"><a class="navLi" href="index.html">Home</a></li>
+		</ul>
+	</nav>
+
+	<div id="firstDiv">
+		<div id="content">
+			<center>
+
+
+			<form name="login">
+				<h1>Log In</h1>
+				<br>
+				Username: <input type="text" name="userid"/>
+				<br>
+				Password: <input type="password" name="pswrd"/>
+				<br>
+				<input type="button" onclick="check(this.form)" value="Login"/>
+				<br>
+			</form>
+			<a href="contactus.html"><h6>Forgot Password?</h6></a>
+			</center>
+		</div>
+	</div>
+
+	<script>
+	function check(form)
+	{
+	 if(form.userid.value == "lucy42" && form.pswrd.value == "perscholas")
+	  {
+	    window.open('premiumsection.html')
+	  }
+	 else
+	 {
+	   alert("Wrong Password or Username")
+	  }
+	}
+	</script>
+</body>
+
+<footer>
+	<ul>
+		<li id="footerId"><a href="contactus.html">Contact Us</a></li>
+		<li id="footerId"><a href="about-us.html">About Us</a></li>
+		<li id="footerId"></li>
+	</ul>
+</footer>
+
+
+</html>

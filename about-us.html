@@ -1,0 +1,274 @@
+<! doctype HTML>
+<html>
+<head>
+	<title>@man: About Us</title>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<style>
+	.externalWrapperB{
+		background-image: url("images/aboutusbackground.jpg");
+		background-size: cover;
+		height: 900px;
+		padding: 0%;
+		padding-top: 20px;
+		width: 100%;
+	}
+	/* provo source image: http://3.bp.blogspot.com/-RH75dS4pzHE/UZb2m2H9IFI/AAAAAAAAHv8/o6JI686B_s8/s1600/futuristic-city-final.jpg*/
+
+	#sideNav
+	{display: inline-block;
+		height: 375px;
+		width: 250px;
+		float: left;
+		position: relative;
+		left: 10px;
+		border: solid 1px #824100;
+		background-color: #361B00;
+		padding-top: 15px;
+
+	}
+
+ 		th{
+ 			color: #824100
+ 			font-size: 25pt;
+ 		}
+ 		td{
+ 			color: #824100;
+ 			font-size: 20pt;
+ 		}
+
+
+		table{
+			border-collapse: separate;
+  		  border-spacing: 5px 20px;
+		}
+
+		.mySlides {display:none;
+					border: solid 2px #824100;	
+					height: 600px;
+					background-color: #361B00;
+					width: 900px;
+					margin: 0 auto;
+					opacity: 0.9;
+					color: #824100;
+				}
+
+
+		.testify{
+			position: relative;
+			top: 20px;
+		}
+
+		img{
+				border: solid 1px #824100;	
+				border-radius: 100px;
+				height: 190px;
+				width: 325px;
+				position: relative;
+				top: 10px;
+		}
+
+		.dots{
+			width: 50px;
+			height: 50px;
+			border-radius: 100px;
+			background-color: #824100;
+
+		}
+
+		#togglerLeft{
+			height: 0px;
+			width: 0px;
+			border-top: 25px solid transparent;
+			border-right: 50px solid #824100;
+			border-bottom: 25px solid transparent;
+			background: transparent;
+			display: inline-block;
+		}
+		#togglerRight{
+			height: 0px;
+			width: 0px;
+			border-top: 25px solid transparent;
+			border-left: 50px solid #824100;
+			border-bottom: 25px solid transparent;
+			background: transparent;
+			display: inline-block;
+
+		}
+		#togglerLeft:hover, #togglerRight:hover, .dots:hover{
+		 transform: scale(1.3); 
+		}
+
+		#togglerLeft:active{
+			border-right:50px solid #361B00;;
+		}
+		#togglerRight:active{
+			border-left: 50px solid #361B00;;
+		}
+		.dots:active{
+			background-color: #361B00;
+		}
+
+	</style>
+</head>
+
+<body>
+	<nav>
+
+		<div> <a href="index.html" id="logo">@man</a></div>
+		<ul>
+			<li class="navLi"><a class="navLi" href="login.html">Log In</a></li>
+			<li class="navLi"><a class="navLi" href="testimonials.html">Testimonials</a></li>
+			<li class="navLi"><a class="navLi" href="wearables.html">Wearables</a></li>
+			<li class="navLi"><a class="navLi" href="subscribe.html">Subscribe</a></li>
+			<li class="navLi"><a class="navLi" href="index.html">Home</a></li>
+		</ul>
+	</nav>
+	<div class="externalWrapperB">
+
+		<div id="sideNav">
+				<table id="table" cellspacing="0px">
+					<tr>
+						<th class="landers" onclick="currentDiv(1)"><div class="dots"></div></th>
+						<td>Who Are We?</td>
+					</tr>
+					<tr>
+						<th class="landers" onclick="currentDiv(2)"><div class="dots"></div></th>
+						<td>The Beginning</td>
+					</tr>
+					<tr>
+						<th class="landers" onclick="currentDiv(3)"><div class="dots"></div></th>
+						<td>The Expansion</td>
+					</tr>
+						<th class="landers" onclick="currentDiv(4)"><div class="dots"></div></th>
+						<td>The Future</td>
+					</tr>
+				</table>
+			<center>
+			<div id="togglerLeft" onclick="plusDivs(-1)"></div>
+			<div id="togglerRight" onclick="plusDivs(1)"></div>
+			</center>
+
+		</div>
+
+		<div class="whiteContent">
+			<div class="mySlides">
+
+				<center>
+				<h3>Who we are?</h3>
+				<img src="http://st2.depositphotos.com/2218438/6012/v/450/depositphotos_60122943-Silhouettes-of-two-businessmen-talking.jpg">
+				</center>
+
+				<!-- Who  We Are? image source:
+				http://st2.depositphotos.com/2218438/6012/v/450/depositphotos_60122943-Silhouettes-of-two-businessmen-talking.jpg
+				-->
+
+					<div class="testify">
+					<center>"@man is the largest conglomorate in the world. We are the global leader in emotional technology. We offer professional emotional audits based on the feedback from your cranial implants. With our help, you will reach your full potential."</center>
+					</div>
+			</div>
+
+
+			<div class="mySlides">
+				<center>
+				<h3>The Beginning</h3>
+				<img src="images/founders.jpg">
+				</center>
+
+				<!-- The Beginning  source:
+				https://cdn.techinasia.com/wp-content/uploads/2015/03/Qyk-team-720x409.jpg		
+				-->
+
+					<div class="testify">
+					<center>
+					"@man was founded on August 29th, 2017 in Panaji, India as a simple app to provide professional emotional support to its subscribers. It quickly became a massive hit throughout India. Shortly afterwards Google purchased the startup and integrated into its biotechnology department. "
+					</center>
+					</div>
+			</div>
+
+			<div class="mySlides">
+				<center>
+				<h3>The Expansion</h3>
+				<img src="images/expansion.jpg">
+				</center>
+
+				<!-- Expansion image source:
+				http://warontherocks.com/wp-content/uploads/2014/10/14799366583_8adf9a91d8_h.jpg				-->
+					<div class="testify">
+					<center>"During the formation of the Premium Cities International Alliance, @man was the leading force behind the formation of our modern safe way of life. With our emotional technology, we learned who was emotionally capable of being a soldier and who fostered sympathy for the rebels in the Basic Lands."</center>
+					</div>
+			</div>
+
+			<div class="mySlides">	
+				<center>
+				<h3>The Future</h3>
+				<img src="images/future.jpg">
+				</center>
+
+				<!-- future image source:
+				https://theartofunity.com/wp-content/uploads/2015/01/secrets-of-happy-couples.jpg-->
+
+					<div class="testify">
+					<center>"During our relatively peaceful life in the Premium Cities, we have been able to expand our efforts in improving civilian life. As  a leading entity of The Premium Cities International Alliance, we look forward to the widespread implementation of wearables worldwide. "</center>
+					</div>
+			</div>
+
+
+			<center>
+		</div>
+	</div>
+
+<script>
+var slideIndex=1;
+showDivs(slideIndex);
+
+function plusDivs(n){
+	showDivs(slideIndex += n);
+}
+
+function currentDiv(n){
+	showDivs(slideIndex=n);
+}
+
+function showDivs(n) {
+	var i;
+	var x = document.getElementsByClassName("mySlides");
+	var landers = document.getElementsByClassName("landers")
+	if(n>x.length) {slideIndex=1}
+	if (n<1) {slideIndex=x.length}
+	for (i=0; i<x.length; i++){
+	x[i].style.display="none";
+	}
+	for(i=0; i<landers.length; i++){
+	}
+	x[slideIndex-1].style.display="block";
+}
+
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none"; 
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1} 
+    slides[slideIndex-1].style.display = "block"; 
+    setTimeout(showSlides, 100000); 
+}
+
+</script>
+
+</body>
+
+	<footer>
+		<ul>
+		<li id="footerId"><a href="contactus.html">Contact Us</a></li>
+		<li id="footerId"><a href="about-us.html">About Us</a></li>
+		<li id="footerId"></li>
+		</ul>
+	</footer>
+
+
+</html>

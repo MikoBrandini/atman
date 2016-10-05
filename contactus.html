@@ -1,0 +1,96 @@
+<!doctype HTML>
+<html>
+<head>
+	<title>@man: Contact Us</title>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+<style>
+	input[type="text"]{
+	text-align: left;
+	} 
+
+	.externalWrapperA{
+		background-image: url("images/boywhiskers.jpeg");
+		background-size: cover;
+		height: 600px;
+		padding: 0%;
+		padding-top: 20px;
+		width: 100%;
+	}
+
+		/*Source of Boy Whiskers Image: https://www.flickr.com/photos/visionnewmedia/12903378183/in/photolist-kEebMD-ecHnaM-rh5LHF-KEfTG-sbTtSS-4nB9gX-qNt46e-gkaCdn-4x3MtQ-5CMGeG-tzzr6-7VLM5o-3fkndw-Gx97B-7FXVnU-e6XwAK-ohMN6F-do5CmS-6cyXRo-becekM-9RwZRa-9N9TGM-dbDWaH-e4hk2Y-oUfiwh-9RqEb4-7rtYRy-Hf7ri-6WBTm8-optTRr-ivc4v-f54uqV-dohPrn-348se3-va8Ki-7RWqXi-pCYQff-rBox4q-7vmLJy-4mRWqk-edXY6z-nPAmmj-m9qH9c-8JrPHH-5iHhT2-qEW1ya-4Md9J2-vw1JkZ-oAZt6P-pWH9Wf */
+
+	.externalWrapperB{
+		width: 33%;
+		position: relative;
+		left: 60px;
+		}
+
+
+	
+</style>
+</head>
+
+<body>
+	<nav>
+
+		<div> <a href="index.html" id="logo">@man</a></div>
+		<ul>
+			<li class="navLi"><a class="navLi" href="login.html">Log In</a></li>
+			<li class="navLi"><a class="navLi" href="testimonials.html">Testimonials</a></li>
+			<li class="navLi"><a class="navLi" href="wearables.html">Wearables</a></li>
+			<li class="navLi"><a class="navLi" href="subscribe.html">Subscribe</a></li>
+			<li class="navLi"><a class="navLi" href="index.html">Home</a></li>
+		</ul>
+
+	</nav>
+	<div class="externalWrapperA">
+		<div class="externalWrapperB">
+			<form name="login">
+			<center>
+				Name: <input type="text" name="nomo"/>
+				<br>
+				Premium Citizen ID#: <input type="number" name="premiumid"/>
+				<br>
+				Topic: 
+				<select name="elekti">
+				<option value="">--Select Topic--</option>
+				<option value="lostpassword">Lost Password</option>
+				<option value="subscription">Subscription Inquiry</option>
+				<option value="techsupport">Technical Inquiry</option>
+				<option value="other">General Inquiry</option>
+				</select><br>
+				<textarea type="text" name="skribi"style="width: 300px; height: 200px;"></textarea><br>
+				<input type="button" onclick="check(this.form)" value="Submit Message"/>
+				<br>
+			</center>
+			</form>
+		</div>
+	</div>
+
+	<script>
+	function check(form)
+	{
+	 if(form.nomo.value !== "" && form.elekti.value !== "" && form.skribi.value !== "")
+	  {
+	    window.open('contactus2.html')
+	  }
+	 else
+	 {
+	   window.alert("Fill Everything Out") 
+	  }
+	}
+	</script>
+
+</body>
+
+<footer>
+	<ul>
+		<li id="footerId"><a href="contactus.html">Contact Us</a></li>
+		<li id="footerId"><a href="about-us.html">About Us</a></li>
+		<li id="footerId"></li>
+	</ul>
+</footer>
+
+
+</html>

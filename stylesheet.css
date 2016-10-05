@@ -1,0 +1,159 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    font-family: cursive;
+    color: #824100;
+    font-size: 16pt;
+}
+
+img { transition:all .2s ease-in-out; 
+}
+
+
+
+#logo
+{
+	font-size: 40pt;
+	color: #824100;
+	font-family: cursive;
+	font-weight: bold;
+	display: inline;
+	float: left;
+	height: 75px;
+	padding-left: 15px;
+	background: transparent;
+}
+
+#logo:hover{
+ transform: scale(1.3);
+}
+#logo:active{
+	color: #361B00;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+
+.navLi {
+    float: right;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 45px;
+    padding-top: 10px;
+	}
+
+nav {
+	font-family: verdana;
+	border: solid 1px #824100;
+	height: 75px;
+	background-color: #361B00;
+	font-size: 24pt;
+	color: #824100;
+	font-family: cursive;
+	opacity: 0.9;
+}
+
+
+
+.whiteContent{
+	margin: 0 auto;
+	width: 1000px;
+	padding-bottom: 10px;
+	color: #824100;
+}
+
+.externalWrapperA{
+	/*white black bg*/
+	width: 100%;
+	color: #361B00;
+	background-color: white;
+	padding: 1%;
+	font-size: 24pt;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.externalWrapperB{
+	width: 100%;
+	background-color: #361B00;
+	color: #824100;
+	font-size: 24pt;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.greenContent{
+	margin: 0 auto;
+	width: 1000px;
+}
+
+
+p{
+	font-size: 18pt;
+	color: #824100;
+	font-style: justify;
+}
+
+footer{
+	font-family: verdana;
+	border: solid 1px #824100;
+	height: 150px;
+	background-color: #361B00;
+	font-size: 18pt;
+	color: #824100;
+
+}
+#footerId
+{
+    display: block;
+    padding-left: 60px;
+    padding-right: 60px;
+    height: 50px;
+    padding-top: 20px;	
+    font-size: 14px;
+    float: right;
+}
+
+a, a:visited{
+	color: #824100;
+	text-decoration: none;
+}
+
+
+a:active{
+	color: #361B00;
+}
+
+input[type="text"]{
+font-size: 16pt;
+text-align: left;
+color: #361B00;}
+
+input[type="password"]{
+font-size: 16pt;
+text-align: left;
+color: #361B00;}
+
+input[type="number"]{
+font-size: 16pt;
+text-align: left;
+color: #361B00;
+}
+
+textarea[type="text"]{
+font-size: 16pt;
+text-align: left;
+color: #361B00;
+}
+
+input[type="button"]{
+	background-color: #361B00;
+	font-size: 20pt;
+	color: #824100;
+}

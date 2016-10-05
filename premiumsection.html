@@ -1,0 +1,496 @@
+<!doctype HTML>
+<html>
+<head>
+	<title>@man: Premium</title>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+	<style>
+	#auditorDiv{
+		background-color: transparent;
+		height: 700px;
+		width: 15%;
+		display: inline-block;
+		padding-bottom: 10px;
+		float: left;
+
+	}
+	.whiteContent{
+		height: 700px;
+		width: 49%;
+		display: inline-block;
+		background: transparent;
+		color: #824100;
+	}
+	#aliceDiv{
+		background: transparent;
+		height: 100%;
+		width: 35%;
+		display: inline-block;
+		padding-bottom: 10px;
+		float: right;
+	}
+
+
+	.sideText{
+		font-size: 25px;
+		 background-color: white;
+		 width: 200px;
+		 margin: 0 auto;
+	}
+
+	.AliceText{
+		font-size: 25px;
+		 width: 200px;
+
+	}
+
+ 	.sidePortraits{
+ 	border: solid 2px #824100;
+	border-radius: 100px;
+	}
+	.mainPortraits{
+	border: solid 2px #824100;
+	border-radius: 100px;
+	margin-top: 20px;
+	}
+	.mainPortraits:hover
+	{transform: scale(1.1)}
+
+	#modalHusband{
+		display: none;
+		position: fixed;
+		top: 0;
+		left:0;
+		overflow: none;
+		z-index: 1;
+		background-color: rgba(54, 27, 0, 0.9);
+		width: 71%;
+
+	}
+	#modalSon{
+		display: none;
+		position: fixed;
+		top: 0;
+		left:0;
+		overflow: none;
+		z-index: 1;
+		background-color: rgba(54, 27, 0, 0.9);
+		width: 71%;
+	}
+
+	#modalSister{
+		display: none;
+		position: fixed;
+		top: 0;
+		left:0;
+		overflow: none;
+		z-index: 1;
+		background-color: rgba(54, 27, 0, 0.9);
+		width: 71%;
+	}
+	#modalEmployer{
+		display: none;
+		position: fixed;
+		top: 0;
+		left:0;
+		overflow: none;
+		z-index: 1;
+		background-color: rgba(54, 27, 0, 0.9);
+		width: 71%;
+	}
+	.modalContent{
+		background-color: white;
+		margin: 10% auto;
+		border: 2px solid #824100;
+		padding-left: 50px;
+		height: 600px;
+		left: 0;
+		top: 0;
+	}
+
+	.auditorNotes
+	{
+		font-size: 24px;
+	}
+	
+	.close{
+		color: brown;
+		float: right;
+		font-size: 42px;
+		font-weight: bold;
+		padding-right:20px;
+	}
+
+	.close:hover, .close:focus
+	{
+		color: black;
+		text-decoration: none;
+		cursor: pointer;
+	}
+	table{
+		float: right;
+		padding-right: 50px;
+		padding-top: 50px;
+	}
+	td, th{
+	border: 1px solid #824100;
+	background-color: white;
+	}
+	th{
+		text-decoration: underline;
+	}
+	h4{
+		font-size: 16pt;
+		color: #824100;
+	}
+	.externalWrapperB{
+		background: url("images/premiumbg.jpg");
+	}
+	/* external wrapper B background source: http://ottmag.com/wp-content/uploads/2016/01/forest-wallpaper-14.jpg;*/
+
+	#logOut
+	{background: white; 
+	margin: 0 auto;
+	margin-top: 20px;
+	display: inline-block;}
+	#logOut:hover{
+		transform: scale(1.1);
+	}
+
+
+	</style>
+
+
+
+</head>
+
+<body>
+	<nav>
+
+		<div> <a href="index.html" id="logo">@man</a></div>
+
+	</nav>
+
+	<div class="externalWrapperB">
+
+		<div id="auditorDiv">
+			<center>
+			<h4><span style="background: white">Auditor: <br> Maxime Novak</span></h4>
+			<img class="sidePortraits" src="images/auditor.jpeg" height="100px">
+			<!-- Source of Auditor image: https://www.instagram.com/p/BLD3KGlg7y8/?taken-by=matthewburch -->
+			<p class="sideText">
+			<u>Recent Assessment:</u> We had another productive session Ms. Nasser. Remember to speak to 5 new people before our next session.
+			 </p><br>
+			</center>
+		</div>
+
+		<div class="whiteContent">
+			<center>
+			<h1 style=""><span style="background-color: white">Your Circle:</span></h1>
+
+			<img  id="husbandButton" class="mainPortraits" height="100px" src="images/husband.jpg">
+			<!-- husband source: http://www.japantimes.co.jp/wp-content/uploads/2016/10/p18-hoffman-leader-a-20161002.jpg -->
+
+
+			<img id="sonButton" class="mainPortraits" height="100px" src="images/son.jpg">
+			<!-- Source of son: http://www.japantimes.co.jp/wp-content/uploads/2016/10/p18-hoffman-leader-a-20161002.jpg -->
+
+
+			<img id="sisterButton" class="mainPortraits" height="100px" src="images/sister.jpg">
+			<!-- sister source: https://upload.wikimedia.org/wikipedia/commons/e/ee/Valentina_Matviyenko_September_2014.jpg -->
+
+			<img id="employerButton" class="mainPortraits" height="100px" src="images/employer.png">
+			<!-- employer source: http://vignette3.wikia.nocookie.net/mrrobot/images/8/87/ECorp.png/revision/latest?cb=20150602024409 -->
+		<br>
+
+			<img class="mainPortraits" height="100px" src="images/addnew.png" onclick="addNew()">
+			<!-- add new icon source: http://monsterblog1.weebly.com/uploads/2/6/2/1/26212966/4715424.png-->
+		</center>
+
+		</div>
+
+		<!-- I created this "Modal Section" so it wouldn't interfere with the centering of the other elements on the main div. The elements in the popup used to be the children of their respective buttons but that was no bueno. -->
+
+		<!--Husband-->
+		<div id="modalHusband">
+			<div class="modalContent">
+				<span class="close">x</span>
+				<img class="mainPortraits" height="250px" src="images/husband.jpg">
+				<table>
+					<tr>
+						<th>Name:</th>
+						<td>Mikayahu Nasser</td>
+					</tr>
+					<tr>
+						<th>Age:</th>
+						<td>62</td>
+					</tr>
+					<tr>
+						<th>Current Mood:</th>
+						<td>Fearful (stressed?)</td>
+					</tr>
+					<tr>
+						<th>Relationship:</th>
+						<td>Domestic Partner</td>
+					</tr>
+					<tr>	
+						<th>Location</th>
+						<td>Denver, United States</td>
+					</tr>
+					<tr>
+						<th>Field:</th>
+						<td>Cybersecurity</td>
+					</tr>
+					<tr>
+						<th>Confidential:</th>					
+						<td>
+							<ul>
+								<li>Functioning Alcoholic</li>
+								<li>Liver Cancer Survivor</li>
+								<li>Guilty About Success</li>
+							</ul>
+						</td>
+					</tr>
+				</table>
+				<div class="auditorNotes">
+					<h3>Auditor Notes:</h3>
+					Your husband is a good man but his alcoholism is how he copes with many problems. Including your current emotional affair with Phil.
+				</div>
+			</div>
+		</div>
+		<!--Son-->
+		<div id="modalSon">
+			<div class="modalContent">
+				<span class="close">x</span>
+				<img class="mainPortraits" height="250px" src="images/son.jpg">
+				<table>
+					<tr>
+						<th>Name:</th>
+						<td>Soma Nasser</td>
+					</tr>
+					<tr>
+						<th>Age:</th>
+						<td>21</td>
+					</tr>
+					<tr>
+						<th>Current Mood:</th>
+						<td>Peaceful</td>
+					</tr>
+					<tr>
+						<th>Relationship:</th>
+						<td>Offspring</td>
+					</tr>
+					<tr>	
+						<th>Location</th>
+						<td>Denver, United States</td>
+					</tr>
+					<tr>
+						<th>Field:</th>
+						<td>Nursing</td>
+					</tr>
+					<tr>
+						<th>Confidential:</th>					
+						<td>
+							<ul>
+								<li>Too Introverted</li>
+								<li>Unmotivated</li>
+								<li>Possibly Christian</li>
+							</ul>
+						</td>
+					</tr>
+				</table>
+				<div class="auditorNotes">
+					<h3>Auditor Notes:</h3>
+		Continue to provide love, but do not endulge his theological transgressions.
+				</div>
+			</div>
+		</div>
+		<!--Sister-->
+		<div id="modalSister">
+			<div class="modalContent">
+				<span class="close">x</span>
+				<img class="mainPortraits" height="250px" src="images/sister.jpg">
+				<table>
+					<tr>
+						<th>Name:</th>
+						<td>Diamond Willaims</td>
+					</tr>
+					<tr>
+						<th>Age:</th>
+						<td>63</td>
+					</tr>
+					<tr>
+						<th>Current Mood:</th>
+						<td>N/A</td>
+					</tr>
+					<tr>
+						<th>Relationship:</th>
+						<td>Sibling</td>
+					</tr>
+					<tr>	
+						<th>Location</th>
+						<td>Kiev, EU</td>
+					</tr>
+					<tr>
+						<th>Field</th>
+						<td>Retired Physician</td>
+					</tr>
+					<tr>
+						<th>Confidential:</th>					
+						<td>
+							<ul>
+								<li>Lonely</li>
+								<li>Too Proud</li>
+							</ul>
+						</td>
+					</tr>
+				</table>
+				<div class="auditorNotes">
+					<h3>Auditor Notes:</h3>
+					Ever since Diamond's partner was lost in battle against rebelious common folk, she has been feeling lonely. You would both benefit from her moving nearby.
+				</div>
+			</div>
+		</div>
+
+		<!--Employer-->
+		<div id="modalEmployer">
+			<div class="modalContent">
+				<span class="close">x</span>
+				<img class="mainPortraits" height="250px" src="images/employer.png">
+				<table>
+					<tr>
+						<th>Name:</th>
+						<td>E Corp</td>
+					</tr>
+					<tr>
+						<th>Age:</th>
+						<td>N/A</td>
+					</tr>
+					<tr>
+						<th>Current Mood:</th>
+						<td>N/A</td>
+					</tr>
+					<tr>
+						<th>Relationship:</th>
+						<td>Employer</td>
+					</tr>
+					<tr>	
+						<th>Location</th>
+						<td>Premium Cities</td>
+					</tr>
+					<tr>
+						<th>Field</th>
+						<td>Conglomerate</td>
+					</tr>
+					<tr>
+						<th>Confidential:</th>					
+						<td>
+							<ul>
+								<li>None</li>
+							</ul>
+						</td>
+					</tr>
+				</table>
+				<div class="auditorNotes">
+					<h3>Auditor Notes:</h3>
+					You are a productive employee. You have nothing to fear.
+				</div>
+			</div>
+		</div>
+
+		<div id="aliceDiv">
+		<center>
+			<h3><span style="background-color: white">'Hello Alice Nasser!</span></h3>
+		
+				<img class="sidePortraits" src="images/alice.jpg" height="205px">
+						<!-- Source of image: http://macaudailytimes.com.mo/wp-content/uploads/2014/08/3-Michelle-Bachelet-President-of-Chile.jpg -->
+
+			</center>
+				<table cellspacing="0px" width="400px" style="padding-top:0">
+					<tr>
+						<th>Name:</th>
+						<td class="aliceTds">Alice Nasser</td>
+					</tr>
+					<tr>
+						<th>Diagnosis</th>
+						<td>Social Anxiety</td>
+					</tr>
+					<tr>
+						<th>Medication:</th>
+						<td>none</td>
+					</tr>
+					</table>
+
+					<center><div id="logOut"><a href="index.html">Log Out</a></div></center>
+
+		</center>
+		</div>
+
+
+<script>
+//Husband Script
+
+var modalHusband = document.getElementById('modalHusband');
+var btnHusband = document.getElementById("husbandButton");
+var spanHusband = document.getElementsByClassName('close')[0];
+
+
+btnHusband.onclick = function() {
+	modalHusband.style.display = "block";
+}
+spanHusband.onclick = function() {
+	modalHusband.style.display = "none";
+}
+
+//Son Script
+
+var modalSon = document.getElementById('modalSon');
+var btnSon = document.getElementById("sonButton");
+var spanSon = document.getElementsByClassName('close')[1];
+
+btnSon.onclick = function() {
+	modalSon.style.display = "block";
+}
+spanSon.onclick = function() {
+	modalSon.style.display = "none";
+}
+
+//Sister Script
+var modalSister = document.getElementById('modalSister');
+var btnSister = document.getElementById("sisterButton");
+var spanSister = document.getElementsByClassName('close')[2];
+
+btnSister.onclick = function() {
+	modalSister.style.display = "block";
+}
+spanSister.onclick = function() {
+	modalSister.style.display = "none";
+}
+
+//Employer Script
+var modalEmployer = document.getElementById('modalEmployer');
+var btnEmployer = document.getElementById("employerButton");
+var spanEmployer = document.getElementsByClassName('close')[3];
+
+btnEmployer.onclick = function() {
+	modalEmployer.style.display = "block";
+}
+spanEmployer.onclick = function() {
+	modalEmployer.style.display = "none";
+}
+
+//Add New
+function addNew(){
+	alert("Upgraded Account Required")
+}
+</script>
+</body>
+
+<footer>
+	<ul>
+		<li id="footerId"><a href="contactus.html">Contact Us</a></li>
+		<li id="footerId"><a href="about-us.html">About Us</a></li>
+		<li id="footerId"></li>
+	</ul>
+</footer>
+</html>
